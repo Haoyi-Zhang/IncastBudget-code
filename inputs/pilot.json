@@ -1,0 +1,3074 @@
+[
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 4,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 0,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 0,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 3,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 3,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 4,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 0,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 2,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 0,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 1,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 0,
+        "upper": 1,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 1,
+        "upper": 1,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 3,
+        "size": 3
+      },
+      {
+        "tenant": 0,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 3,
+        "size": 3
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 1
+      },
+      {
+        "tenant": 0,
+        "lower": 0,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 0,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 4,
+        "size": 1
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  },
+  {
+    "bursts": [
+      {
+        "tenant": 1,
+        "lower": 3,
+        "upper": 3,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 4,
+        "size": 2
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 3
+      },
+      {
+        "tenant": 1,
+        "lower": 2,
+        "upper": 2,
+        "size": 2
+      }
+    ],
+    "rates": [
+      "1/2",
+      "3/2"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "pool": "8",
+  "private": [
+    "4",
+    "5"
+  ],
+  "time": 4,
+  "attaining_releases": [
+    0,
+    4,
+    2,
+    4
+  ],
+  "checker": {
+    "row_count": 6,
+    "event_times": 6,
+    "sparse_event_entries": 8,
+    "state_vector_entries": 6,
+    "event_index_entries": 12,
+    "working_entry_upper_bound": 26,
+    "rows_materialized": false
+  },
+  "model": "independent-windows-fixed-reservations"
+}

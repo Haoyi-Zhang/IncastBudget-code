@@ -1,0 +1,32 @@
+{
+  "core_test_methods": 18,
+  "additional_test_methods": 15,
+  "test_methods": 33,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "suite_contract": {
+    "core": {
+      "pattern": "test_models.py",
+      "expected": 18,
+      "discovered": 18,
+      "executed": 18
+    },
+    "additional": {
+      "patterns": [
+        "test_independent_oracles.py",
+        "test_independent_oracles_adversarial.py"
+      ],
+      "expected": 15,
+      "discovered": 15,
+      "executed": 15
+    },
+    "strict_counts_match": true
+  },
+  "measurement": {
+    "cpu_seconds": 4.695747505,
+    "wall_seconds": 4.736960457000123,
+    "peak_rss_kib": 16128,
+    "workers": 1
+  }
+}

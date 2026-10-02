@@ -1,0 +1,11 @@
+{
+  "bursts": [
+    {"tenant": 0, "lower": 0, "upper": 0, "size": 4},
+    {"tenant": 0, "lower": 3, "upper": 4, "size": 3},
+    {"tenant": 1, "lower": 1, "upper": 2, "size": 3},
+    {"tenant": 1, "lower": 4, "upper": 5, "size": 4}
+  ],
+  "rates": ["1", "1"],
+  "capacity": "2",
+  "floors": ["1/4", "1/2"]
+}

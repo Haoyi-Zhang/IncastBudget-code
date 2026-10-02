@@ -1,0 +1,21 @@
+{
+  "part": "first",
+  "parent_cpu_seconds": 0.06472067399999999,
+  "child_cpu_seconds": 7.205555,
+  "wall_seconds": 7.636227764000068,
+  "parent_peak_rss_kib": 16152,
+  "largest_child_peak_rss_kib": 19940,
+  "workers": 1,
+  "validation_jobs": 11,
+  "core_test_methods": 0,
+  "additional_test_methods": 0,
+  "test_methods": 0,
+  "certificate_actions": 0,
+  "derived_files_checked": 0,
+  "limits": {
+    "child_cpu_seconds": 40,
+    "child_wall_seconds": 40,
+    "address_space_mib": 3584
+  },
+  "scientific_results_match": true
+}

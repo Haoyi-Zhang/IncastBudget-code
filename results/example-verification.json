@@ -1,0 +1,5 @@
+{
+  "valid": true,
+  "model": "independent-windows-fixed-reservations",
+  "scope": "two-tenant exact optimum"
+}

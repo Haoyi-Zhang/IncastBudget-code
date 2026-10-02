@@ -1,0 +1,66 @@
+{
+  "execution": "two serial resumable parts",
+  "parent_cpu_seconds": 0.22594120899999998,
+  "child_cpu_seconds": 17.870485000000002,
+  "wall_seconds": 18.71209250700008,
+  "parent_peak_rss_kib": 16156,
+  "largest_child_peak_rss_kib": 40504,
+  "workers": 1,
+  "validation_jobs": 17,
+  "core_test_methods": 18,
+  "additional_test_methods": 15,
+  "test_methods": 33,
+  "certificate_actions": 3,
+  "derived_files_checked": 3,
+  "limits": {
+    "child_cpu_seconds": 40,
+    "child_wall_seconds": 40,
+    "address_space_mib": 3584
+  },
+  "scientific_results_match": true,
+  "wall_scope": "sum of active parts; excludes time between invocations",
+  "parts": [
+    {
+      "part": "first",
+      "parent_cpu_seconds": 0.06472067399999999,
+      "child_cpu_seconds": 7.205555,
+      "wall_seconds": 7.636227764000068,
+      "parent_peak_rss_kib": 16152,
+      "largest_child_peak_rss_kib": 19940,
+      "workers": 1,
+      "validation_jobs": 11,
+      "core_test_methods": 0,
+      "additional_test_methods": 0,
+      "test_methods": 0,
+      "certificate_actions": 0,
+      "derived_files_checked": 0,
+      "limits": {
+        "child_cpu_seconds": 40,
+        "child_wall_seconds": 40,
+        "address_space_mib": 3584
+      },
+      "scientific_results_match": true
+    },
+    {
+      "part": "second",
+      "parent_cpu_seconds": 0.161220535,
+      "child_cpu_seconds": 10.66493,
+      "wall_seconds": 11.075864743000011,
+      "parent_peak_rss_kib": 16156,
+      "largest_child_peak_rss_kib": 40504,
+      "workers": 1,
+      "validation_jobs": 6,
+      "core_test_methods": 18,
+      "additional_test_methods": 15,
+      "test_methods": 33,
+      "certificate_actions": 3,
+      "derived_files_checked": 3,
+      "limits": {
+        "child_cpu_seconds": 40,
+        "child_wall_seconds": 40,
+        "address_space_mib": 3584
+      },
+      "scientific_results_match": true
+    }
+  ]
+}

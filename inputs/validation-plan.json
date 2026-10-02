@@ -1,0 +1,110 @@
+{
+  "purpose": "Pre-lock correctness and boundary validation, not a workload-performance campaign",
+  "bounded_domain": {
+    "burst_count": 3,
+    "time_endpoints": [
+      0,
+      1,
+      2
+    ],
+    "sizes": [
+      1,
+      2
+    ],
+    "tenant_count": 2,
+    "first_burst_tenant": 0,
+    "other_tenant_assignments": "all 4 ordered choices",
+    "rate_vectors": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1/2",
+        "3/2"
+      ],
+      [
+        "2",
+        "0"
+      ]
+    ],
+    "calendars": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        -1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "integer_release_choices": "all points in every window",
+    "instances": 20736,
+    "chunks": 12
+  },
+  "allocation_domain": {
+    "burst_count": 2,
+    "tenant_assignment": [
+      0,
+      1
+    ],
+    "time_endpoints": [
+      0,
+      1,
+      2
+    ],
+    "sizes": [
+      1,
+      2
+    ],
+    "capacity": "2",
+    "floor_pairs": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1/4",
+        "1/2"
+      ],
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "instances": 432,
+    "oracle": "all actual integer releases followed by all affine-intersection candidates"
+  },
+  "baselines": [
+    "transparent shadow recurrence",
+    "direct interval formula",
+    "all integer releases",
+    "slot-by-slot calendar replay",
+    "actual-trace allocation vertex enumeration"
+  ],
+  "negative_controls": [
+    "all endpoint corners on m=2..10",
+    "phase-correlated versus rectangular window hull",
+    "same quota, different calendar order",
+    "sum of private peaks versus shared peak",
+    "work-conserving aggregate versus fixed reservation"
+  ],
+  "input_selection": "complete stated bounded domains, no test-set tuning, no stochastic confidence interval",
+  "falsification": "Any disagreement aborts the chunk. Counts alone do not establish novelty or practical relevance.",
+  "resource_bounds": {
+    "workers": 1,
+    "memory_address_space_mib": 3584,
+    "per_chunk_cpu_seconds": 40,
+    "per_chunk_wall_seconds": 40,
+    "full_extension_cpu_seconds": 600,
+    "repair_and_clean_reproduction_reserved_cpu_seconds": 7200
+  },
+  "scientific_lock": false
+}

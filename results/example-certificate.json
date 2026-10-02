@@ -1,0 +1,27 @@
+{
+  "rate0": "1",
+  "buffer": "8",
+  "mode": "interior",
+  "support": [
+    {
+      "line": {
+        "slope": "-2",
+        "intercept": "10",
+        "time": 4,
+        "s0": 0,
+        "s1": 2
+      },
+      "weight": "1/2"
+    },
+    {
+      "line": {
+        "slope": "2",
+        "intercept": "6",
+        "time": 4,
+        "s0": 4,
+        "s1": 2
+      },
+      "weight": "1/2"
+    }
+  ]
+}

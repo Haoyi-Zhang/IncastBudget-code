@@ -1,0 +1,1741 @@
+{
+  "instances": 96,
+  "fluid_traces": 1902,
+  "cell_traces": 1902,
+  "rows": [
+    {
+      "case": 0,
+      "pool": "10",
+      "private": [
+        "7",
+        "3"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            7,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "pool": "6",
+      "private": [
+        "2",
+        "4"
+      ],
+      "traces": 30,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "pool": "19/2",
+      "private": [
+        "8",
+        "2"
+      ],
+      "traces": 20,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            8,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "pool": "17/2",
+      "private": [
+        "17/2",
+        "0"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            9,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "pool": "17/2",
+      "private": [
+        "15/2",
+        "1"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            8,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "pool": "4",
+      "private": [
+        "3",
+        "1"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 5,
+          "private": [
+            4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "pool": "7",
+      "private": [
+        "7",
+        "0"
+      ],
+      "traces": 40,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            7,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "pool": "13/2",
+      "private": [
+        "3",
+        "7/2"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "pool": "10",
+      "private": [
+        "5",
+        "5"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 11,
+          "private": [
+            6,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "pool": "15/2",
+      "private": [
+        "0",
+        "15/2"
+      ],
+      "traces": 18,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "pool": "9",
+      "private": [
+        "6",
+        "3"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "pool": "9",
+      "private": [
+        "2",
+        "7"
+      ],
+      "traces": 144,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 12,
+      "pool": "8",
+      "private": [
+        "3",
+        "5"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            3,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 13,
+      "pool": "19/2",
+      "private": [
+        "19/2",
+        "0"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            10,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 14,
+      "pool": "21/2",
+      "private": [
+        "21/2",
+        "0"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 11,
+          "private": [
+            11,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 15,
+      "pool": "6",
+      "private": [
+        "9/2",
+        "2"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 16,
+      "pool": "13/2",
+      "private": [
+        "5",
+        "3"
+      ],
+      "traces": 10,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            5,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "pool": "13/2",
+      "private": [
+        "9/2",
+        "2"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 18,
+      "pool": "13/2",
+      "private": [
+        "13/2",
+        "2"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            7,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 19,
+      "pool": "8",
+      "private": [
+        "7",
+        "2"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            7,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 20,
+      "pool": "7",
+      "private": [
+        "5",
+        "2"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 21,
+      "pool": "9",
+      "private": [
+        "4",
+        "6"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 22,
+      "pool": "8",
+      "private": [
+        "5",
+        "3"
+      ],
+      "traces": 36,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            5,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 23,
+      "pool": "5",
+      "private": [
+        "2",
+        "3"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 5,
+          "private": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 24,
+      "pool": "13/2",
+      "private": [
+        "4",
+        "3"
+      ],
+      "traces": 60,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "pool": "15/2",
+      "private": [
+        "11/2",
+        "2"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            6,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 26,
+      "pool": "9",
+      "private": [
+        "15/2",
+        "2"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            7,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 27,
+      "pool": "9",
+      "private": [
+        "2",
+        "7"
+      ],
+      "traces": 64,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 28,
+      "pool": "15/2",
+      "private": [
+        "1",
+        "7"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 29,
+      "pool": "21/2",
+      "private": [
+        "6",
+        "5"
+      ],
+      "traces": 16,
+      "cells": [
+        {
+          "pool": 11,
+          "private": [
+            6,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 30,
+      "pool": "5",
+      "private": [
+        "4",
+        "2"
+      ],
+      "traces": 80,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 31,
+      "pool": "11",
+      "private": [
+        "6",
+        "6"
+      ],
+      "traces": 16,
+      "cells": [
+        {
+          "pool": 12,
+          "private": [
+            6,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 32,
+      "pool": "6",
+      "private": [
+        "6",
+        "3"
+      ],
+      "traces": 5,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            6,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 33,
+      "pool": "11/2",
+      "private": [
+        "3",
+        "3"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 5,
+          "private": [
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 34,
+      "pool": "17/2",
+      "private": [
+        "11/2",
+        "3"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 35,
+      "pool": "11",
+      "private": [
+        "8",
+        "3"
+      ],
+      "traces": 10,
+      "cells": [
+        {
+          "pool": 11,
+          "private": [
+            8,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 36,
+      "pool": "7",
+      "private": [
+        "4",
+        "4"
+      ],
+      "traces": 20,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 37,
+      "pool": "5",
+      "private": [
+        "5",
+        "1"
+      ],
+      "traces": 2,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            6,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 38,
+      "pool": "11/2",
+      "private": [
+        "1",
+        "11/2"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            1,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 39,
+      "pool": "7",
+      "private": [
+        "2",
+        "7"
+      ],
+      "traces": 15,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 40,
+      "pool": "13/2",
+      "private": [
+        "4",
+        "4"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 41,
+      "pool": "15/2",
+      "private": [
+        "5",
+        "3"
+      ],
+      "traces": 36,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            5,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 42,
+      "pool": "8",
+      "private": [
+        "3",
+        "5"
+      ],
+      "traces": 3,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            3,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 43,
+      "pool": "4",
+      "private": [
+        "4",
+        "2"
+      ],
+      "traces": 15,
+      "cells": [
+        {
+          "pool": 4,
+          "private": [
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 44,
+      "pool": "13/2",
+      "private": [
+        "7/2",
+        "3"
+      ],
+      "traces": 2,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            4,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 45,
+      "pool": "8",
+      "private": [
+        "6",
+        "2"
+      ],
+      "traces": 36,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            6,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 46,
+      "pool": "9",
+      "private": [
+        "2",
+        "7"
+      ],
+      "traces": 96,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 47,
+      "pool": "9",
+      "private": [
+        "4",
+        "5"
+      ],
+      "traces": 72,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 48,
+      "pool": "13/2",
+      "private": [
+        "13/2",
+        "0"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            7,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 49,
+      "pool": "9",
+      "private": [
+        "9",
+        "0"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            10,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 50,
+      "pool": "13/2",
+      "private": [
+        "13/2",
+        "1"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 51,
+      "pool": "10",
+      "private": [
+        "6",
+        "4"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            6,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 52,
+      "pool": "17/2",
+      "private": [
+        "15/2",
+        "1"
+      ],
+      "traces": 36,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 53,
+      "pool": "9",
+      "private": [
+        "3",
+        "6"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            3,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 54,
+      "pool": "10",
+      "private": [
+        "7",
+        "3"
+      ],
+      "traces": 9,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            7,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 55,
+      "pool": "9",
+      "private": [
+        "3",
+        "6"
+      ],
+      "traces": 54,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            3,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 56,
+      "pool": "6",
+      "private": [
+        "11/2",
+        "3"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 57,
+      "pool": "15/2",
+      "private": [
+        "11/2",
+        "2"
+      ],
+      "traces": 3,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            6,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 58,
+      "pool": "7",
+      "private": [
+        "11/2",
+        "2"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            6,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 59,
+      "pool": "13/2",
+      "private": [
+        "0",
+        "13/2"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            0,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 60,
+      "pool": "15/2",
+      "private": [
+        "13/2",
+        "1"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            6,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 61,
+      "pool": "8",
+      "private": [
+        "7",
+        "1"
+      ],
+      "traces": 2,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            8,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 62,
+      "pool": "5",
+      "private": [
+        "1",
+        "5"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            1,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 63,
+      "pool": "7",
+      "private": [
+        "5",
+        "2"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 64,
+      "pool": "7",
+      "private": [
+        "0",
+        "7"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "case": 65,
+      "pool": "7",
+      "private": [
+        "5",
+        "2"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 66,
+      "pool": "9/2",
+      "private": [
+        "9/2",
+        "1"
+      ],
+      "traces": 2,
+      "cells": [
+        {
+          "pool": 5,
+          "private": [
+            5,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 67,
+      "pool": "10",
+      "private": [
+        "10",
+        "0"
+      ],
+      "traces": 72,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            10,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": 68,
+      "pool": "15/2",
+      "private": [
+        "5",
+        "4"
+      ],
+      "traces": 18,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            5,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 69,
+      "pool": "8",
+      "private": [
+        "5",
+        "3"
+      ],
+      "traces": 54,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            5,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 70,
+      "pool": "19/2",
+      "private": [
+        "4",
+        "6"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 10,
+          "private": [
+            4,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 71,
+      "pool": "5",
+      "private": [
+        "3",
+        "7/2"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 72,
+      "pool": "11/2",
+      "private": [
+        "11/2",
+        "1"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            6,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 73,
+      "pool": "7",
+      "private": [
+        "2",
+        "6"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            2,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 74,
+      "pool": "13/2",
+      "private": [
+        "0",
+        "13/2"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            0,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 75,
+      "pool": "7",
+      "private": [
+        "9/2",
+        "4"
+      ],
+      "traces": 18,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            5,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 76,
+      "pool": "15/2",
+      "private": [
+        "1",
+        "7"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 77,
+      "pool": "5",
+      "private": [
+        "2",
+        "3"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 5,
+          "private": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 78,
+      "pool": "17/2",
+      "private": [
+        "11/2",
+        "3"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 79,
+      "pool": "13/2",
+      "private": [
+        "2",
+        "9/2"
+      ],
+      "traces": 4,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            2,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 80,
+      "pool": "7",
+      "private": [
+        "7",
+        "2"
+      ],
+      "traces": 15,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            7,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 81,
+      "pool": "9",
+      "private": [
+        "3",
+        "6"
+      ],
+      "traces": 16,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            3,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "case": 82,
+      "pool": "7",
+      "private": [
+        "4",
+        "7/2"
+      ],
+      "traces": 2,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "case": 83,
+      "pool": "7/2",
+      "private": [
+        "2",
+        "2"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 4,
+          "private": [
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 84,
+      "pool": "6",
+      "private": [
+        "4",
+        "2"
+      ],
+      "traces": 32,
+      "cells": [
+        {
+          "pool": 7,
+          "private": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 85,
+      "pool": "9",
+      "private": [
+        "4",
+        "5"
+      ],
+      "traces": 64,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "case": 86,
+      "pool": "11/2",
+      "private": [
+        "7/2",
+        "2"
+      ],
+      "traces": 6,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 87,
+      "pool": "8",
+      "private": [
+        "8",
+        "1"
+      ],
+      "traces": 16,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            8,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 88,
+      "pool": "11/2",
+      "private": [
+        "7/2",
+        "3"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 6,
+          "private": [
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 89,
+      "pool": "9",
+      "private": [
+        "6",
+        "3"
+      ],
+      "traces": 18,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "case": 90,
+      "pool": "7",
+      "private": [
+        "1",
+        "6"
+      ],
+      "traces": 20,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 91,
+      "pool": "8",
+      "private": [
+        "7",
+        "1"
+      ],
+      "traces": 24,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            7,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 92,
+      "pool": "15/2",
+      "private": [
+        "2",
+        "11/2"
+      ],
+      "traces": 8,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "case": 93,
+      "pool": "9",
+      "private": [
+        "7",
+        "2"
+      ],
+      "traces": 12,
+      "cells": [
+        {
+          "pool": 9,
+          "private": [
+            7,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "case": 94,
+      "pool": "5",
+      "private": [
+        "4",
+        "1"
+      ],
+      "traces": 30,
+      "cells": [
+        {
+          "pool": 5,
+          "private": [
+            4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "case": 95,
+      "pool": "15/2",
+      "private": [
+        "0",
+        "15/2"
+      ],
+      "traces": 3,
+      "cells": [
+        {
+          "pool": 8,
+          "private": [
+            0,
+            8
+          ]
+        }
+      ]
+    }
+  ],
+  "measurement": {
+    "cpu_seconds": 0.14078655600000012,
+    "wall_seconds": 0.14495047399987016,
+    "peak_rss_kib": 94512,
+    "workers": 1
+  }
+}
