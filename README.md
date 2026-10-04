@@ -145,8 +145,4 @@ full-paper calibration and the narrower closest-work comparison. No copyrighted
 paper PDF, third-party code, model weight, hidden cache, or private input is
 bundled or modified.
 
-The project used substantive OpenAI ChatGPT assistance in research, proofs,
-code, experiments, literature synthesis, and writing. Human authors must review
-the work and satisfy actual authorship, disclosure, originality, and venue rules
-before external use. Original code, synthetic data, and proof documentation are
-covered by `LICENSE`; consulted-resource boundaries are in `licenses/NOTICE.md`.
+Original code, synthetic data, and proof documentation are covered by `LICENSE`; consulted-resource boundaries are in `licenses/NOTICE.md`.
