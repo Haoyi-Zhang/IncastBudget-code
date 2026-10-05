@@ -93,8 +93,8 @@ def shadow_reference(bursts: Sequence[Burst], rates: Sequence[F], record: bool =
     payload_per_row=2*n+2
     event_times=len(events)
     # Abstract entry accounting: three n-vectors, sparse mass entries, event-map
-    # keys, and the sorted event index. Python object/header overhead is not
-    # claimed to be represented by this language-independent count.
+    # keys, and the sorted event index. Transient q/p rows, scalar temporaries
+    # and Python object/header overhead are excluded; this is not a peak bound.
     working_entries=3*n+sparse_entries+2*event_times
     return {'pool':peak,'private':peaks,'time':when,'trace':trace,
             'row_count':row_count,
@@ -102,7 +102,7 @@ def shadow_reference(bursts: Sequence[Burst], rates: Sequence[F], record: bool =
                        'sparse_event_entries':sparse_entries,
                        'state_vector_entries':3*n,
                        'event_index_entries':2*event_times,
-                       'working_entry_upper_bound':working_entries,
+                       'selected_container_entries':working_entries,
                        'entry_accounting':'state vectors + sparse masses + event-map keys + sorted index',
                        'emitted_row_payload_entries':row_count*payload_per_row if (record or row_sink is not None) else 0,
                        'materialized_row_payload_entries':len(trace)*payload_per_row}}

@@ -57,7 +57,7 @@ class QueueTests(unittest.TestCase):
             self.assertEqual(ref['storage']['event_times'],n)
             self.assertEqual(ref['storage']['sparse_event_entries'],2*n)
             self.assertEqual(ref['storage']['event_index_entries'],2*n)
-            self.assertEqual(ref['storage']['working_entry_upper_bound'],7*n)
+            self.assertEqual(ref['storage']['selected_container_entries'],7*n)
             self.assertEqual(ref['storage']['materialized_row_payload_entries'],0)
             self.assertEqual(len(seen),n)
     def test_large_calendar_horizon(self):

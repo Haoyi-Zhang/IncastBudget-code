@@ -80,7 +80,7 @@ def main():
                             'sparse_event_entries':ref['storage']['sparse_event_entries'],
                             'state_vector_entries':ref['storage']['state_vector_entries'],
                             'event_index_entries':ref['storage']['event_index_entries'],
-                            'working_entry_upper_bound':ref['storage']['working_entry_upper_bound'],
+                            'selected_container_entries':ref['storage']['selected_container_entries'],
                             'rows_materialized':False}
             if args.rows_output is not None:
                 out['row_stream']={'format':'jsonl','rows':ref['row_count'],

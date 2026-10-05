@@ -17,7 +17,7 @@
     "sparse_event_entries": 8,
     "state_vector_entries": 6,
     "event_index_entries": 12,
-    "working_entry_upper_bound": 26,
+    "selected_container_entries": 26,
     "rows_materialized": false
   },
   "model": "independent-windows-fixed-reservations"

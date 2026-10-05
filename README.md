@@ -32,8 +32,9 @@ must equal the shipped result; only timing and RSS measurements are excluded. A
 count mismatch, import failure, result mismatch, timeout, or failed test exits
 nonzero.
 
-Each validation child has a 40-second CPU limit and a 3,584 MiB address-space
-limit; the parent imposes a 40-second wall limit per child. One worker is used.
+Validation and test workers enforce a 40-second CPU limit and a 3,584 MiB
+address-space limit. The parent imposes a 40-second wall timeout on every direct
+child, including certificate actions and export, and runs one worker at a time.
 A slower host may time out rather than silently reducing coverage. The frozen clean-archive two-part run recorded 18.096426 parent-plus-child CPU seconds,
 18.712093 seconds of active wall time, and 40,504 KiB as the largest child peak
 RSS; these are host-specific feasibility measurements, not performance results.
@@ -126,6 +127,11 @@ fixed reservation is not interchangeable with work-conserving aggregate
 service. It also retains the separate sparse-storage audit. The reference
 checker uses `O(n+m)` working entries and `O(nm)` arithmetic; choosing to retain
 all full endpoint rows is explicitly a `Theta(nm)` output-space mode.
+`selected_container_entries` counts the three state vectors, sparse masses,
+event-map keys and sorted endpoint index. It excludes transient q/p row payloads,
+scalar temporaries and Python object overhead; it is not a peak-memory bound.
+`rows_materialized: false` means the full row history is not retained, not that
+no temporary row is allocated.
 
 ## Figure data and evidence traceability
 

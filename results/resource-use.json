@@ -15,7 +15,9 @@
   "limits": {
     "child_cpu_seconds": 40,
     "child_wall_seconds": 40,
-    "address_space_mib": 3584
+    "address_space_mib": 3584,
+    "cpu_address_space_scope": "validation and test workers",
+    "wall_timeout_scope": "every direct child"
   },
   "scientific_results_match": true,
   "wall_scope": "sum of active parts; excludes time between invocations",
@@ -37,7 +39,9 @@
       "limits": {
         "child_cpu_seconds": 40,
         "child_wall_seconds": 40,
-        "address_space_mib": 3584
+        "address_space_mib": 3584,
+        "cpu_address_space_scope": "validation and test workers",
+        "wall_timeout_scope": "every direct child"
       },
       "scientific_results_match": true
     },
@@ -58,7 +62,9 @@
       "limits": {
         "child_cpu_seconds": 40,
         "child_wall_seconds": 40,
-        "address_space_mib": 3584
+        "address_space_mib": 3584,
+        "cpu_address_space_scope": "validation and test workers",
+        "wall_timeout_scope": "every direct child"
       },
       "scientific_results_match": true
     }

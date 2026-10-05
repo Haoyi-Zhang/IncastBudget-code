@@ -83,7 +83,7 @@
         "sparse_event_entries": 16,
         "state_vector_entries": 24,
         "event_index_entries": 16,
-        "working_entry_upper_bound": 56,
+        "selected_container_entries": 56,
         "streamed_rows": 8,
         "pool": "1"
       },
@@ -94,7 +94,7 @@
         "sparse_event_entries": 32,
         "state_vector_entries": 48,
         "event_index_entries": 32,
-        "working_entry_upper_bound": 112,
+        "selected_container_entries": 112,
         "streamed_rows": 16,
         "pool": "1"
       },
@@ -105,7 +105,7 @@
         "sparse_event_entries": 64,
         "state_vector_entries": 96,
         "event_index_entries": 64,
-        "working_entry_upper_bound": 224,
+        "selected_container_entries": 224,
         "streamed_rows": 32,
         "pool": "1"
       },
@@ -116,7 +116,7 @@
         "sparse_event_entries": 128,
         "state_vector_entries": 192,
         "event_index_entries": 128,
-        "working_entry_upper_bound": 448,
+        "selected_container_entries": 448,
         "streamed_rows": 64,
         "pool": "1"
       },
@@ -127,7 +127,7 @@
         "sparse_event_entries": 256,
         "state_vector_entries": 384,
         "event_index_entries": 256,
-        "working_entry_upper_bound": 896,
+        "selected_container_entries": 896,
         "streamed_rows": 128,
         "pool": "1"
       },
@@ -138,7 +138,7 @@
         "sparse_event_entries": 512,
         "state_vector_entries": 768,
         "event_index_entries": 512,
-        "working_entry_upper_bound": 1792,
+        "selected_container_entries": 1792,
         "streamed_rows": 256,
         "pool": "1"
       }

@@ -133,7 +133,9 @@ implementation stores only nonzero endpoint masses, three n-vectors, and the
 sorted endpoint keys, hence O(n+m) working entries while performing O(nm)
 arithmetic. Retaining every full q/p row is a distinct Theta(nm)-scalar output
 choice; the default result omits it and a diagnostic sink can stream rows one at
-a time. A violated cap is demonstrated by the explicit clipped release vector.
+a time. Transient q/p row snapshots also require O(n) entries. The reported
+selected-container count excludes those snapshots and is not a bound on all
+live entries. A violated cap is demonstrated by the explicit clipped release vector.
 That witness proves a lower bound; the recurrence plus Theorem 1 proves the
 upper bound.
 

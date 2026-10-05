@@ -117,7 +117,9 @@ def main():
         'derived_files_checked': 0 if args.part == 'first' else 3,
         'limits': {'child_cpu_seconds': CHILD_CPU_LIMIT_SECONDS,
                    'child_wall_seconds': CHILD_WALL_TIMEOUT_SECONDS,
-                   'address_space_mib': ADDRESS_SPACE_MIB},
+                   'address_space_mib': ADDRESS_SPACE_MIB,
+                   'cpu_address_space_scope': 'validation and test workers',
+                   'wall_timeout_scope': 'every direct child'},
         'scientific_results_match': True,
     }
     name = f'{args.part}-part-resources.json' if args.part else 'resource-use.json'

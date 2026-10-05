@@ -109,13 +109,13 @@ def controls():
         profile=reference['storage']
         assert profile['event_times']==n and profile['sparse_event_entries']==2*n
         assert profile['event_index_entries']==2*n
-        assert profile['working_entry_upper_bound']==7*n
+        assert profile['selected_container_entries']==7*n
         assert profile['materialized_row_payload_entries']==0 and streamed[0]==n
         storage_rows.append({'n':n,'m':n,'event_times':profile['event_times'],
                              'sparse_event_entries':profile['sparse_event_entries'],
                              'state_vector_entries':profile['state_vector_entries'],
                              'event_index_entries':profile['event_index_entries'],
-                             'working_entry_upper_bound':profile['working_entry_upper_bound'],
+                             'selected_container_entries':profile['selected_container_entries'],
                              'streamed_rows':streamed[0],'pool':reference['pool']})
         if n==8:
             recorded=shadow_reference(sparse,rates,record=True)
