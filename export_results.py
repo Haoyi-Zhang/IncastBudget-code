@@ -27,7 +27,8 @@ def export(results,output):
              'test_methods':t['test_methods'],'failures':t['failures'],'errors':t['errors'],
              'storage_scaling_instances':len(storage_rows),
              'storage_scaling_max_n':max(row['n'] for row in storage_rows)}
-    (output/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
+    (output/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',
+                                      encoding='utf-8',newline='\n')
     with (output/'corners.csv').open('w',newline='') as f:
         w=csv.writer(f);w.writerow(['bursts','endpoint_peak','exact_peak'])
         for row in get('controls')['corner_family']:

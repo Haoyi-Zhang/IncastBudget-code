@@ -4,7 +4,7 @@ This is a benign synthetic queue model. No network connection is opened.
 """
 from itertools import product
 from fractions import Fraction as F
-from queues import Burst, simulate
+from phase_dp import validate_phase_instance
 
 def graph_instance(vertices, edges):
     """Unit bursts, unit reservations, and four possible arrival epochs."""
@@ -30,15 +30,27 @@ def graph_instance(vertices, edges):
             'jobs':jobs,'anchor_mass':M,'observation':D+1}
 
 def phase_trace(instance, bits):
-    g=instance['groups']; D=instance['offset']; n=instance['tenants']
+    """Ordinary event replay on the same exact-rational domain as phase DP.
+
+    Only input validation is shared with the solver; replay does not construct
+    occupancy factors or call elimination. Tied arrivals are coalesced before
+    observing the queues, and unused constant service is discarded.
+    """
+    g,n,D,rates,jobs=validate_phase_instance(instance)
     if len(bits)!=g or any(type(b) is not int or b not in (0,1) for b in bits):
         raise ValueError('one binary choice per phase group required')
-    bs=[];times=[]
-    for job in instance['jobs']:
-        group=job['group'];base=job['base'];upper=base if group is None else base+D
-        bs.append(Burst(job['tenant'],base,upper,job['size']))
-        times.append(base if group is None else base+D*bits[group])
-    return simulate(bs,[F(x) for x in instance['rates']],times)
+    events={}
+    for tenant,group,base,size in jobs:
+        at=base if group is None else base+D*bits[group]
+        arrivals=events.setdefault(at,[F(0)]*n)
+        arrivals[tenant]+=size
+    q=[F(0)]*n;private=[F(0)]*n;peak=F(0);when=F(0);last=F(0)
+    for at,arrivals in sorted(events.items()):
+        q=[max(F(0),v-r*(at-last))+a for v,r,a in zip(q,rates,arrivals)]
+        private=[max(v,p) for v,p in zip(q,private)]
+        if sum(q)>peak:peak=sum(q);when=at
+        last=at
+    return {'pool':peak,'private':private,'time':when,'trace':[]}
 
 def exhaustive_phase_peak(instance, group_limit=20):
     """Exact exponential checker, deliberately bounded; not a polynomial solver."""

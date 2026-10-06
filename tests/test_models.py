@@ -98,6 +98,13 @@ class QueueTests(unittest.TestCase):
     def test_enumeration_guard(self):
         with self.assertRaises(ValueError):enumerate_releases([Burst(0,0,100,1)],[F(1)],limit=10)
     def test_private_caps(self):
+        # Nonempty traffic can have no positive-duration affine cut. The
+        # minimum required rate is still defined as zero when the cap fits.
+        for single in (Burst(0,0,0,2),Burst(0,0,3,2)):
+            instant=private_admission([single],[2],[0],0)
+            self.assertTrue(instant['feasible'])
+            self.assertEqual(instant['rates'],[F(0)])
+            self.assertFalse(private_admission([single],[1],[0],100)['feasible'])
         bs=[Burst(0,0,0,2),Burst(0,4,4,2)]
         out=private_admission(bs,[2],[0],1);self.assertTrue(out['feasible']);self.assertEqual(out['rates'],[F(1,2)])
         self.assertFalse(private_admission(bs,[1],[0],100)['feasible'])
@@ -190,6 +197,23 @@ class QueueTests(unittest.TestCase):
         with self.assertRaises(ValueError):induced_width(ins,[0,1,1])
         with self.assertRaises(ValueError):robust_phase_peak(dict(ins,offset=-1))
         with self.assertRaises(ValueError):validate_phase_instance(dict(ins,rates=[0.5,1,0]))
+    def test_phase_rational_replay(self):
+        ins={'groups':2,'offset':'1/2','tenants':2,'rates':['1','0'],
+             'jobs':[{'tenant':0,'group':0,'base':'0','size':'3/2'},
+                     {'tenant':0,'group':1,'base':'1/2','size':'1/2'},
+                     {'tenant':1,'group':None,'base':'1/2','size':'1/3'}]}
+        # Both shifted arrivals tie at 1/2 for bits (1,0). The burst that
+        # arrives at zero otherwise drains 1/2 before the next observation.
+        self.assertEqual(phase_trace(ins,[1,0])['pool'],F(7,3))
+        self.assertEqual(phase_trace(ins,[0,0])['pool'],F(11,6))
+        dp=robust_phase_peak(ins)
+        self.assertEqual(exhaustive_phase_peak(ins)['pool'],dp['pool'])
+        self.assertEqual(phase_trace(ins,dp['phases'])['pool'],dp['pool'])
+        empty=dict(ins,jobs=[])
+        self.assertEqual(phase_trace(empty,[0,1])['pool'],0)
+        self.assertEqual(robust_phase_peak(empty)['pool'],0)
+        for bad in (dict(ins,rates=[True,0]),dict(ins,offset=0.5)):
+            with self.assertRaises(ValueError):phase_trace(bad,[0,0])
     def test_permutation_invariance(self):
         bs=[Burst(0,0,2,1),Burst(1,1,3,2),Burst(0,3,4,1)]
         rates=[F(2,3),F(4,5)];a=shadow_fast(bs,rates)

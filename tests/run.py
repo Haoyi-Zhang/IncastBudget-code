@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the frozen 18-test core suite and all 15 independent exactness/adversarial tests."""
+"""Run 19 core methods and all 15 independent exactness/adversarial tests."""
 from pathlib import Path
 import argparse
 import json
@@ -19,7 +19,7 @@ sys.path.insert(0,str(ROOT/'src'))
 CORE_PATTERN='test_models.py'
 ADDITIONAL_PATTERNS=('test_independent_oracles.py',
                      'test_independent_oracles_adversarial.py')
-EXPECTED_CORE=18
+EXPECTED_CORE=19
 EXPECTED_ADDITIONAL=15
 
 

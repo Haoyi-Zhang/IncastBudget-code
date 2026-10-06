@@ -69,7 +69,7 @@ every intermediate factor has at most `w(pi)` remaining variables, while the
 bucket being maximized contains at most `w(pi)+1` variables.
 
 **Theorem 1 (exact bounded-width phase certificate).**  For an explicitly
-listed binary-phase instance and any supplied elimination order `pi`, max-sum
+listed nonempty binary-phase instance and any supplied elimination order `pi`, max-sum
 elimination computes `B_phase`, a maximizing observation, and a maximizing phase
 assignment exactly.  With exact arithmetic its time is
 
@@ -78,6 +78,10 @@ assignment exactly.  With exact arithmetic its time is
 and its working storage is `poly(m+n+g)*2^{w(pi)+1}`.  The reported order and its
 filled-neighborhood sizes are directly checkable; optimal treewidth need not be
 computed.
+
+For empty traffic the peak is zero, every assignment is maximizing, and a
+time-zero sentinel records the observation. Input and order validation take
+polynomial time; the nonempty bound above does not use `|T|=0` for that branch.
 
 Proof.  The candidate-time argument reduces the outer maximum to finite `T`.
 For one `t`, the tenant replay tables are precisely the factors above.  The

@@ -162,7 +162,8 @@ runtime dependent on numerator and denominator lengths.
 
 ## 4. Admission from private caps
 
-For a lower endpoint t, tenant i, and cut s in {t} union {u_j<=t:i(j)=i}, define
+For a lower endpoint t and tenant i, let C_i(t)={t} union {u_j<=t:i(j)=i}.
+For each cut s in C_i(t), define
 
     W_i(s,t) = sum_{j:i(j)=i,l_j<=t,u_j>=s} b_j.
 
@@ -177,8 +178,13 @@ For nonempty traffic and proposed private cap h_i, require W_i(t,t)<=h_i for
 every lower endpoint t. If any such instantaneous condition fails, no finite
 rate can satisfy the cap. Otherwise set
 
-    R_i(h_i)=max(0, max_{t,s<t} (W_i(s,t)-h_i)/(t-s)),
+    R_i(h_i)=max({0} union {(W_i(s,t)-h_i)/(t-s): t in L,
+                           s in C_i(t), s<t}),
     r_i_min=max(gamma*w_i,R_i(h_i)).
+
+The explicit zero member handles an empty positive-duration cut set, including
+nonempty traffic consisting of one fixed burst at time zero. No maximum over
+an empty set is required.
 
 Feasible reservations exist iff sum_i r_i_min<=C; assigning these rates is a
 constructive solution (unused capacity may remain unassigned).

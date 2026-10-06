@@ -25,19 +25,26 @@ python3 reproduce.py --part second --output /tmp/incast-reproduction
 
 The second command verifies the retained first part before resuming. The first
 part runs 11 validation jobs; the second runs the remaining 6, then an explicitly
-partitioned test contract of 18 core methods plus 15 additional exactness and
-adversarial methods (33 total), three example-certificate actions, and three
+partitioned test contract of 19 core methods plus 15 additional exactness and
+adversarial methods (34 total), three example-certificate actions, and three
 derived-file comparisons. Every scientific JSON field and every derived CSV
 must equal the shipped result; only timing and RSS measurements are excluded. A
 count mismatch, import failure, result mismatch, timeout, or failed test exits
-nonzero.
+nonzero. Each direct child's command, stdout, and stderr are retained in the
+chosen output directory, including failed attempts. The scientific workflow
+uses the flat repository root, Ubuntu 24.04, and a 600-second whole-run wall
+deadline; raw output is uploaded even if a gate fails.
 
 Validation and test workers enforce a 40-second CPU limit and a 3,584 MiB
 address-space limit. The parent imposes a 40-second wall timeout on every direct
 child, including certificate actions and export, and runs one worker at a time.
-A slower host may time out rather than silently reducing coverage. The frozen clean-archive two-part run recorded 18.096426 parent-plus-child CPU seconds,
+A slower host may time out rather than silently reducing coverage. The historical
+clean-archive two-part run, before the added phase regression, used 33 tests and
+recorded 18.096426 parent-plus-child CPU seconds,
 18.712093 seconds of active wall time, and 40,504 KiB as the largest child peak
-RSS; these are host-specific feasibility measurements, not performance results.
+RSS; these are original-host feasibility measurements, not measurements of the
+revised suite or performance results. The current test summary records the
+Windows finite check separately; POSIX reproduction limits remain Linux-only.
 
 ## Inspect one independent-window certificate
 
@@ -76,7 +83,8 @@ research interface, not a hardened network service.
   organized actual-trace two-tenant allocation oracle.
 - `src/allocation.py`: general-tenant private-cap admission and exact
   **two-tenant** pooled-rate optimization/checking.
-- `src/phases.py`: construction and ordinary replay for binary shared phases.
+- `src/phases.py`: construction and ordinary exact-rational event replay for
+  binary shared phases, on the same parsed input domain as the phase solver.
 - `src/phase_dp.py`: candidate-time reduction, factor construction, induced-width
   checking, exact max-sum elimination, and maximizing-assignment reconstruction.
 - `proofs/core.md`: independent-window service-clock theorem, exact capacities,
@@ -108,7 +116,7 @@ independent production workloads.
 | Private-cap combinations | 3,888 | 3,888 decisions |
 | All labeled simple graphs on 1--4 vertices | 75 | 1,098 phase assignments |
 | Width-one path stress case | 1 (64 vertices) | 2,020 factor entries, exact peak 316 |
-| Test contract | 33 methods | 18 core + 15 additional; all pass |
+| Test contract | 34 methods | 19 core + 15 additional; all pass |
 | Sparse storage family | 6 sizes | `n=m=8,...,256`; exact values agree, `2m` event entries |
 
 The bounded window producer, recurrence, busy-interval formula, integer-release

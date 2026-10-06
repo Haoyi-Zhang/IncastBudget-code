@@ -9,7 +9,8 @@ their exact rational linear algebra.
 
 These modules are validation oracles rather than production-scale solvers.  The
 standard `tests/run.py` entry point executes their eight exactness tests and
-seven adversarial tests after the original 18-test model suite.
+seven adversarial tests after the 19-method model suite (the original 18 methods
+plus the rational-phase replay regression).
 
 The ternary and four-valued tables in these tests stress the oracle software;
 they do not expand the paper's correlated-arrival model, whose shared phase

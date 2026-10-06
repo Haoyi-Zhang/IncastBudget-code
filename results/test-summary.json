@@ -1,16 +1,16 @@
 {
-  "core_test_methods": 18,
+  "core_test_methods": 19,
   "additional_test_methods": 15,
-  "test_methods": 33,
+  "test_methods": 34,
   "failures": 0,
   "errors": 0,
   "successful": true,
   "suite_contract": {
     "core": {
       "pattern": "test_models.py",
-      "expected": 18,
-      "discovered": 18,
-      "executed": 18
+      "expected": 19,
+      "discovered": 19,
+      "executed": 19
     },
     "additional": {
       "patterns": [
@@ -24,9 +24,9 @@
     "strict_counts_match": true
   },
   "measurement": {
-    "cpu_seconds": 4.695747505,
-    "wall_seconds": 4.736960457000123,
-    "peak_rss_kib": 16128,
-    "workers": 1
+    "cpu_seconds": 4.34375,
+    "wall_seconds": 4.42921010000282,
+    "host": "Windows Python 3.12.14; not the historical Linux run",
+    "limits": "40 user-CPU seconds / 3584 MiB job; 50-second parent wall"
   }
 }

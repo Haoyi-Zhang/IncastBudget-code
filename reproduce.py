@@ -61,9 +61,19 @@ def main():
     parent_start = time.process_time()
     env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONHASHSEED='0')
 
+    worker_index = 0
     def run(command, quiet=False):
-        subprocess.run(command, check=True, timeout=CHILD_WALL_TIMEOUT_SECONDS, cwd=ROOT, env=env,
-                       stdout=subprocess.DEVNULL if quiet else None)
+        nonlocal worker_index
+        worker_index += 1
+        label = args.part or 'all'
+        log_path = out / f'{label}-worker-{worker_index:02d}.log'
+        with log_path.open('w', encoding='utf-8') as log:
+            log.write(json.dumps({'command': command}) + '\n')
+            log.flush()
+            subprocess.run(command, check=True, timeout=CHILD_WALL_TIMEOUT_SECONDS,
+                           cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT)
+        if not quiet:
+            print(log_path.read_text(encoding='utf-8'), end='', flush=True)
 
     selected = JOBS[:SPLIT] if args.part == 'first' else JOBS[SPLIT:] if args.part == 'second' else JOBS
     for kind, chunk in selected:
