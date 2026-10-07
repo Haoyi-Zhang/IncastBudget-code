@@ -28,6 +28,9 @@ jobs:
           mkdir -p "$RUNNER_TEMP/p047-science"
           ulimit -t 600
           ulimit -v 3670016
+          timeout --signal=TERM --kill-after=10s 40s \
+            python -B tests/snapshot_regression.py \
+            2>&1 | tee "$RUNNER_TEMP/p047-science/snapshot-regression.log"
           timeout --signal=TERM --kill-after=10s 600s \
             python -B reproduce.py --output "$RUNNER_TEMP/p047-science" \
             2>&1 | tee "$RUNNER_TEMP/p047-science/run.log"

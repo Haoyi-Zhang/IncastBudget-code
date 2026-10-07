@@ -83,9 +83,12 @@ def shadow_reference(bursts: Sequence[Burst], rates: Sequence[F], record: bool =
             value=q[i]+p[i]
             if value>peaks[i]:peaks[i]=value
             total+=value
-        row=(t,tuple(q),tuple(p),total)
-        if record:trace.append(row)
-        if row_sink is not None:row_sink(row)
+        if record:
+            row=(t,tuple(q),tuple(p),total)
+            trace.append(row)
+            if row_sink is not None:row_sink(row)
+        elif row_sink is not None:
+            row_sink((t,tuple(q),tuple(p),total))
         row_count+=1
         if total>peak:peak=total;when=t
         last=t

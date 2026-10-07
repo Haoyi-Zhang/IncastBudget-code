@@ -141,6 +141,13 @@ scalar temporaries and Python object overhead; it is not a peak-memory bound.
 `rows_materialized: false` means the full row history is not retained, not that
 no temporary row is allocated.
 
+When neither recording nor streaming is requested, the transparent recurrence
+does not construct diagnostic q/p tuple snapshots. Its recurrence, returned
+values and abstract storage/row counters are unchanged. The portable independent
+regression `python -B tests/snapshot_regression.py` runs explicitly in CI before
+the unchanged historical 19+15 test/reproduction contract. It is a separate
+finite correctness check, not a new campaign or a measured performance result.
+
 ## Figure data and evidence traceability
 
 ```sh
