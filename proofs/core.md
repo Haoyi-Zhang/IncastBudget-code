@@ -354,7 +354,7 @@ r_i and remain restricted to constant reservations.
 ## 7. Sharp negative controls
 
 **Proposition 1 (all endpoint corners can miss by an arbitrary factor).** For
-one tenant with r=1 and m unit bursts, use windows [j,m+j], j=0,...,m-1.
+an integer m>=1 and one tenant with r=1, use m unit bursts with windows [j,m+j], j=0,...,m-1.
 Any vector selecting only endpoints releases at distinct integer times because
 the lower and upper endpoint sets are disjoint. Successive unit bursts are
 separated by at least one unit of time, so the maximum queue is exactly one.
