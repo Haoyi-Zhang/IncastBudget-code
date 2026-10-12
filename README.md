@@ -167,3 +167,10 @@ paper PDF, third-party code, model weight, hidden cache, or private input is
 bundled or modified.
 
 Original code, synthetic data, and proof documentation are covered by `LICENSE`; consulted-resource boundaries are in `licenses/NOTICE.md`.
+## Vector figure reproduction
+
+The retained data can be rendered with `python scripts/plot_figures.py`.
+Native PDFs go to `figures/`; `--paper-figures ../paper/figures` copies identical
+assets into a full project's sibling paper. Figure-only dependencies, font
+discovery and portable fallbacks are documented in `scripts/README.md`.
+Certificate execution and raw scientific result files are unchanged.

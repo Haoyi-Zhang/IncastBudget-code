@@ -39,7 +39,7 @@ def export(results,output):
         w=csv.writer(f);w.writerow(['rate0','pool','decreasing_cut','increasing_cut'])
         for k in range(51):
             x=lo+(hi-lo)*F(k,50); B=shadow_reference(bs,[x,C-x])['pool']
-            # PGFPlots consumes decimal coordinates. Here all numbers terminate
+            # The vector figure producer consumes decimal coordinates. Here all numbers terminate
             # exactly at <=3 decimal places, and the fractions are also retained.
             w.writerow([format(float(x),'.6f'),format(float(B),'.6f'),
                         format(float(10-2*x),'.6f'),format(float(6+2*x),'.6f')])
