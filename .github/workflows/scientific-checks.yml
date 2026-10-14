@@ -28,6 +28,12 @@ jobs:
           mkdir -p "$RUNNER_TEMP/p047-science"
           ulimit -t 600
           ulimit -v 3670016
+          timeout --signal=TERM --kill-after=10s 60s \
+            python -B -m unittest discover -s tests -p test_segment_check.py -v \
+            2>&1 | tee "$RUNNER_TEMP/p047-science/segment-check.log"
+          timeout --signal=TERM --kill-after=10s 60s \
+            python -B -O -m unittest discover -s tests -p test_segment_check.py -v \
+            2>&1 | tee "$RUNNER_TEMP/p047-science/segment-check-optimized.log"
           timeout --signal=TERM --kill-after=10s 40s \
             python -B tests/snapshot_regression.py \
             2>&1 | tee "$RUNNER_TEMP/p047-science/snapshot-regression.log"

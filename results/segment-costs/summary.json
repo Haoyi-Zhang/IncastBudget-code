@@ -1,0 +1,102 @@
+{
+  "record_sha256": "bd3279c02ccfcf62f4e772107c789e2b6c4a58c2582224b756bcc4bda74edeae",
+  "groups": [
+    {
+      "group": "pilot.json",
+      "label": "Window pilot",
+      "instances": 96,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 1.4473354940459484,
+      "all_ratios": [
+        1.4473354940459484,
+        1.396544315791092,
+        1.520153102077466
+      ]
+    },
+    {
+      "group": "bounded.jsonl",
+      "label": "Window domain",
+      "instances": 20736,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 1.4555754144686914,
+      "all_ratios": [
+        1.3820214098932242,
+        1.4555754144686914,
+        1.4648705788120322
+      ]
+    },
+    {
+      "group": "sparse-8",
+      "label": "Sparse 8",
+      "instances": 1,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 0.6904215711131587,
+      "all_ratios": [
+        0.09890088790422477,
+        0.6904215711131587,
+        0.7882816397221384
+      ]
+    },
+    {
+      "group": "sparse-16",
+      "label": "Sparse 16",
+      "instances": 1,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 0.3466078844615894,
+      "all_ratios": [
+        0.4381905735114685,
+        0.34050287648225613,
+        0.3466078844615894
+      ]
+    },
+    {
+      "group": "sparse-32",
+      "label": "Sparse 32",
+      "instances": 1,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 0.24962180510748788,
+      "all_ratios": [
+        0.24962180510748788,
+        0.24674965402936563,
+        0.2851440208862685
+      ]
+    },
+    {
+      "group": "sparse-64",
+      "label": "Sparse 64",
+      "instances": 1,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 0.1279073910171058,
+      "all_ratios": [
+        0.13470309291968954,
+        0.1279073910171058,
+        0.12329093877719582
+      ]
+    },
+    {
+      "group": "sparse-128",
+      "label": "Sparse 128",
+      "instances": 1,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 0.06499153347635112,
+      "all_ratios": [
+        0.06522899464437258,
+        0.06255562821670071,
+        0.06499153347635112
+      ]
+    },
+    {
+      "group": "sparse-256",
+      "label": "Sparse 256",
+      "instances": 1,
+      "matched_rounds": 3,
+      "median_segment_over_transparent_wall": 0.032987852518417494,
+      "all_ratios": [
+        0.03380942555277422,
+        0.032987852518417494,
+        0.032460780563558785
+      ]
+    }
+  ],
+  "interpretation": "Median of three unfiltered same-output complete-group wall ratios; repeated authored controls, not independent deployed workloads"
+}

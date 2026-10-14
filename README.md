@@ -67,6 +67,7 @@ are in `results/reproduction/`; root and `results/current/` bytes remain histori
 ## Inspect one independent-window certificate
 
 ```sh
+python3 src/segment_certificate.py check inputs/example.json
 python3 src/queue_certificate.py check inputs/example.json
 python3 src/queue_certificate.py check inputs/example.json \
   --rows-output /tmp/incast-envelope-rows.jsonl
@@ -84,6 +85,18 @@ witness at time 4, and compact checker/storage metadata. Full `q/p` rows are not
 materialized by default; `--rows-output` streams one JSON record per endpoint.
 The private maxima need not occur together.
 
+For constant reservations, `segment_certificate.py` checks the heap producer
+with separately constructed per-tenant queue segments and replays the clipped
+witness through actual-arrival segments. All three stages take
+`O((m+n) log(m+n))` exact arithmetic/comparison operations and `O(m+n)` working
+entries. It emits the same scientific thresholds and observation, without
+dense endpoint history. `queue_certificate.py` retains transparent recurrence
+checking and row streaming. General service-clock and calendar results keep
+their stated interfaces. The proof is `proofs/segment-verifier.md`; seven
+separate segment regression methods compare the complete existing 96+20,736
+window inputs in ordinary and optimized modes and do not change the frozen
+34-method model suite.
+
 Burst tenant, lower endpoint, upper endpoint, and size fields are integers.
 Rates, floors, and capacities accept integers or exact strings such as `1/2`.
 Binary floating point, booleans, duplicate JSON keys, and non-finite constants
@@ -97,6 +110,8 @@ research interface, not a hardened network service.
 - `src/queues.py`: ordinary trace replay, a sparse-event transparent recurrence
   with optional row streaming, a heap-based constant-rate sweep, clipped
   witnesses, and fixed equal-cell calendars.
+- `src/segment_check.py`: independent fixed-rate queue segments and merged
+  events for exact envelope verification and concrete witness replay.
 - `src/oracle.py`: exhaustive integer-release oracle and an independently
   organized actual-trace two-tenant allocation oracle.
 - `src/allocation.py`: general-tenant private-cap admission and exact
@@ -215,8 +230,21 @@ mode is feasibility evidence, not a statistical or deployment benchmark.
 already-shipped sparse controls, not a new generated matrix. Actual-release
 replay now coalesces only nonzero tenant arrivals. It preserves numerical values
 and optional row history without calling the window-envelope recurrence. The
-complete checked path is O(nm+(n+m)log(n+m)) arithmetic, not near-linear; unrecorded
+transparent checked path is O(nm+(n+m)log(n+m)) arithmetic; unrecorded
 replay uses O(n+m) entries. Python dictionary bytes can be worse at small n even
 though the entry count improves. Recorded full rows still cost Theta(nm) output.
 Raw storage/cost records and current measurements are in `results/reproduction/`.
 All inputs are authored mathematical configurations, never native network traces.
+
+`scripts/measure_segments.py` compares the separate segment route with the
+transparent checked route on the same 96 pilot and 20,736 bounded inputs and
+the six existing sparse controls. The current source-bound record is
+`results/segment-costs/samples.json`; `scripts/summarize_segments.py` regenerates
+its summary and paper table. Three alternating, unfiltered passes retain 48
+whole-group wall/CPU observations. JSON decoding, instance construction,
+producer, independent verification, witness replay and scientific-output
+serialization are charged; file acquisition and interpreter startup are not.
+Outputs match byte-for-byte. Segment/transparent median wall ratios are 1.447
+for the pilot, 1.456 for the bounded domain and 0.033 for the 256-tenant sparse
+control. Those repetitions characterize these local inputs, not a transport
+benchmark or additional independent workloads.
