@@ -1,0 +1,29 @@
+{
+  "workflow_test_methods": 4,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "scope": "4 separate workflow methods; no new scientific input population",
+  "measurement": {
+    "cpu_seconds": 0.015625,
+    "wall_seconds": 0.3071609000035096,
+    "peak_rss_kib": null,
+    "workers": 1,
+    "environment": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+      "os": "Windows-11-10.0.28000-SP0",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+      "logical_cpus": 20,
+      "optimization": 0
+    },
+    "limits": {
+      "mode": "portable",
+      "cpu_limit_seconds": null,
+      "address_space_mib": null,
+      "affinity_pinned": false,
+      "reason": "Explicit opt-in; POSIX CPU/address-space guards not executed."
+    }
+  }
+}

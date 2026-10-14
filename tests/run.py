@@ -4,7 +4,6 @@ from pathlib import Path
 import argparse
 import json
 import os
-import resource
 import sys
 import time
 import unittest
@@ -15,6 +14,7 @@ TEST_DIR=Path(__file__).resolve().parent
 # first on sys.path on current Python versions.
 sys.path.insert(0,str(ROOT))
 sys.path.insert(0,str(ROOT/'src'))
+from run_environment import enforce_limits, measurement
 
 CORE_PATTERN='test_models.py'
 ADDITIONAL_PATTERNS=('test_independent_oracles.py',
@@ -36,11 +36,9 @@ def run_suite(label,suite):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--portable',action='store_true',help='explicitly omit POSIX CPU/address-space guards')
     args=parser.parse_args()
-    if hasattr(os,'sched_setaffinity'):
-        os.sched_setaffinity(0,{min(os.sched_getaffinity(0))})
-    resource.setrlimit(resource.RLIMIT_AS,(3584*1024**2,3584*1024**2))
-    resource.setrlimit(resource.RLIMIT_CPU,(40,40))
+    limits=enforce_limits(args.portable)
 
     core=discover(CORE_PATTERN)
     additional=unittest.TestSuite(discover(p) for p in ADDITIONAL_PATTERNS)
@@ -75,12 +73,7 @@ def main():
                           'executed':additional_result.testsRun},
             'strict_counts_match':contract_ok,
         },
-        'measurement':{
-            'cpu_seconds':time.process_time()-cpu_start,
-            'wall_seconds':time.perf_counter()-wall_start,
-            'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
-            'workers':1,
-        },
+        'measurement':measurement(cpu_start,wall_start,limits),
     }
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(report,indent=2)+'\n')

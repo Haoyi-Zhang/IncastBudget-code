@@ -1,0 +1,2 @@
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/validate_cases.py", "allocation-pilot", "--output", "/home/runner/work/_temp/p047-science/allocation-pilot.json"]}
+{"instances": 80, "traces": 1910, "private_cap_checks": 0, "measurement": {"cpu_seconds": 0.273424819, "wall_seconds": 0.2740832470000001, "peak_rss_kib": 17684, "workers": 1}}

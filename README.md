@@ -6,7 +6,7 @@ Correlated Phases, and Tractability**. It contains exact-rational reference
 implementations, bounded independent oracles, written proofs, deterministic
 inputs, tests, raw results, and claim/resource ledgers.
 
-The artifact supports a completed internal research draft. It is not a claim of
+The artifact supports an internal research draft. It is not a claim of
 peer review, switch deployment, transport performance, or external submission
 readiness. General theorems are written mathematical arguments, not
 proof-assistant developments; finite checks validate implementations only on
@@ -14,7 +14,8 @@ the declared domains.
 
 ## Reproduce all shipped scientific results
 
-Use Python 3.10 or later on Linux. Only the standard library is required. No
+Use Python 3.10 or later. Default Linux execution enforces POSIX limits; Windows
+requires explicit `--portable` mode. Only the standard library is required. No
 package installation, network access, model API, GPU, private data, or paper
 directory is used.
 
@@ -26,7 +27,8 @@ python3 reproduce.py --part second --output /tmp/incast-reproduction
 The second command verifies the retained first part before resuming. The first
 part runs 11 validation jobs; the second runs the remaining 6, then an explicitly
 partitioned test contract of 19 core methods plus 15 additional exactness and
-adversarial methods (34 total), three example-certificate actions, and three
+adversarial methods (34 total), eight separately counted regression methods
+(three snapshot, four workflow, one sparse replay), three example-certificate actions, and three
 derived-file comparisons. Every scientific JSON field and every derived CSV
 must equal the shipped result; only timing and RSS measurements are excluded. A
 count mismatch, import failure, result mismatch, timeout, or failed test exits
@@ -43,8 +45,24 @@ clean-archive two-part run, before the added phase regression, used 33 tests and
 recorded 18.096426 parent-plus-child CPU seconds,
 18.712093 seconds of active wall time, and 40,504 KiB as the largest child peak
 RSS; these are original-host feasibility measurements, not measurements of the
-revised suite or performance results. The current test summary records the
-Windows finite check separately; POSIX reproduction limits remain Linux-only.
+revised suite or performance results. The historical test summary records a
+Windows finite check separately.
+
+On Windows run `python -B reproduce.py --portable --output PATH`, where PATH is
+a fresh directory outside `results/`. This explicitly omits POSIX CPU/address-
+space guards and affinity pinning; every direct child still has a 40-second wall
+timeout. Unavailable child-total CPU and process RSS are JSON null, never zero or
+inferred from another host. Worker process CPU and wall time, OS/interpreter and
+guard mode are recorded. `-O` propagates to direct children; explicit scientific
+failures cannot be optimized away. The two modes are not new input populations.
+
+Reproduction refuses retained output names and any subdirectory of shipped
+`results/`. Resume requires unchanged consumed source/input bytes and the same
+interpreter, optimization and guard mode. Preserve failed attempts and choose a
+new directory. CPU/address-space guards apply to validation and `tests/run.py`;
+separate regressions, CLI actions and export have wall timeout only. The default
+POSIX branch was not executed on the current Windows host. Current local records
+are in `results/reproduction/`; root and `results/current/` bytes remain historical.
 
 ## Inspect one independent-window certificate
 
@@ -173,4 +191,32 @@ The retained data can be rendered with `python scripts/plot_figures.py`.
 Native PDFs go to `figures/`; `--paper-figures ../paper/figures` copies identical
 assets into a full project's sibling paper. Figure-only dependencies, font
 discovery and portable fallbacks are documented in `scripts/README.md`.
-Certificate execution and raw scientific result files are unchanged.
+Historical raw files and scientific thresholds are unchanged. CLI outputs must
+be new distinct paths and never alias inputs or certificates; diagnostic rows
+use an independently named temporary file and exclusive publication.
+
+## Complete paths and sparse replay
+
+`python -B scripts/measure_paths.py --output PATH` measures the existing 96 and
+20,736 window inputs and 80 and 432 allocation inputs, once per path. Both window
+paths return exact pool/private values plus a replayed attaining release. The
+production path includes transparent checking; the direct busy-interval formula
+does not call it. Both allocation identifiers get only the same original input
+and return the exact value, smallest optimizer and replayed witness. Production
+also pays its internal certificate check and a serialized-consumer check; the
+direct actual-release vertex oracle has no supplied certificate or production
+cut/hull call. A supplied-candidate verifier is timed separately: its smaller
+information task is not identification and not credited as a solver speedup.
+Timers include JSON decoding, object construction and output encoding, but not
+interpreter startup or disk I/O. All CPU/wall records are retained; one pass per
+mode is feasibility evidence, not a statistical or deployment benchmark.
+
+`python -B scripts/measure_replay_storage.py --output PATH` measures the same six
+already-shipped sparse controls, not a new generated matrix. Actual-release
+replay now coalesces only nonzero tenant arrivals. It preserves numerical values
+and optional row history without calling the window-envelope recurrence. The
+complete checked path is O(nm+(n+m)log(n+m)) arithmetic, not near-linear; unrecorded
+replay uses O(n+m) entries. Python dictionary bytes can be worse at small n even
+though the entry count improves. Recorded full rows still cost Theta(nm) output.
+Raw storage/cost records and current measurements are in `results/reproduction/`.
+All inputs are authored mathematical configurations, never native network traces.

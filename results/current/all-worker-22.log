@@ -1,0 +1,23 @@
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/export_results.py", "--results", "/home/runner/work/_temp/p047-science", "--output", "/home/runner/work/_temp/p047-science/derived"]}
+{
+  "bounded_instances": 20736,
+  "bounded_fluid_traces": 96000,
+  "bounded_cell_traces": 288000,
+  "pilot_instances": 96,
+  "pilot_fluid_traces": 1902,
+  "pilot_cell_traces": 1902,
+  "allocation_instances": 432,
+  "allocation_traces": 1200,
+  "private_cap_checks": 3888,
+  "allocation_pilot_instances": 80,
+  "allocation_pilot_traces": 1910,
+  "graphs": 75,
+  "phase_assignments": 1098,
+  "core_test_methods": 19,
+  "additional_test_methods": 15,
+  "test_methods": 34,
+  "failures": 0,
+  "errors": 0,
+  "storage_scaling_instances": 6,
+  "storage_scaling_max_n": 256
+}

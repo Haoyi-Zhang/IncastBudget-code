@@ -1,0 +1,68 @@
+{
+  "scope": "Scientific source/data bindings, not reviewer logs or a publisher signature",
+  "historical_queues_sha256": "c4759168fd7edabc6e12ee36ff88dc65462663100037fb7db0ff7757bf1e1813",
+  "current_sources": [
+    {
+      "path": "artifact/src/allocation.py",
+      "sha256": "39fe99d2b7cc48dfb788526535377cf87941f72cc25b7616385302a4413479f1"
+    },
+    {
+      "path": "artifact/src/exact.py",
+      "sha256": "9d49d7868999ff583910cfc5616a3a284f3ff99d1879ff220b60687c7e216760"
+    },
+    {
+      "path": "artifact/src/oracle.py",
+      "sha256": "6cda02a1e247f7c8402473c52653726d6ca50444a400a74f01d3c5c6d7f90c4f"
+    },
+    {
+      "path": "artifact/src/phase_dp.py",
+      "sha256": "f0c757043c99e6dba3ae314a23d685fc1c545c43dbd7c1a426d5a6ead4266c54"
+    },
+    {
+      "path": "artifact/src/phases.py",
+      "sha256": "01bbad8f9553d6eed53f1848bc8007aa2afdd68d7d4a71c70193fbe0f14b6951"
+    },
+    {
+      "path": "artifact/src/queue_certificate.py",
+      "sha256": "f870427b71dd9fba66a8315f1dc9d55f2c0cfde79c95cc8e903046f03a4816d6"
+    },
+    {
+      "path": "artifact/src/queues.py",
+      "sha256": "a70f56be73f4f44cb38b70986da0a55bf8e8f89200d250bebc906633f8cf494e"
+    },
+    {
+      "path": "artifact/src/run_environment.py",
+      "sha256": "e77da5676e717f5a27cc12ac512ca88cd2daad5fc51299c18250365846828089"
+    },
+    {
+      "path": "artifact/src/validate_cases.py",
+      "sha256": "8ad888702c719277b614c11fe737b2f273fb0b19e8a96ff3093450055c67ba73"
+    },
+    {
+      "path": "artifact/scripts/measure_paths.py",
+      "sha256": "8d204c4f5c16f71eb90d3615be7679cd4f4a7070078cd8f525809f0969b3549e"
+    },
+    {
+      "path": "artifact/scripts/measure_replay_storage.py",
+      "sha256": "9d020e77cba9d6193c490b4667154f712cf3566e4e7871b137ac3bc891ce04cd"
+    },
+    {
+      "path": "artifact/scripts/plot_figures.py",
+      "sha256": "4b72babb513186bcedb14929b3ceda2efddbc41e0584918c40699dc189bc6a99"
+    }
+  ],
+  "before_measurement_binding": "queues.py was byte-identical to frozen before manifest when replay-storage-before.json ran; recorded before the sparse replay edit. Exact before bytes retained in private snapshot for independent review.",
+  "inputs": "Unchanged four input files and existing controls construction; input hashes are in paired path records and consumed resume bindings.",
+  "commands": {
+    "normal": "python -B reproduce.py --portable --output NEW_PATH",
+    "optimized": "python -B -O reproduce.py --portable --output NEW_PATH",
+    "resumed": [
+      "python -B reproduce.py --portable --part first --output NEW_PATH",
+      "python -B reproduce.py --portable --part second --output SAME_PATH"
+    ],
+    "paths": "python -B [-O] scripts/measure_paths.py --output NEW_JSON",
+    "storage": "python -B [-O] scripts/measure_replay_storage.py --output NEW_JSON"
+  },
+  "negative_result_policy": "All six storage sizes and all four complete-path input files retained. Repetitions/modes are not new scientific populations.",
+  "plot_bindings": "Regenerated from normal/derived with supplied plot producer, Times New Roman: PDFs byte-identical to existing scientific figure assets."
+}

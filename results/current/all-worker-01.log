@@ -1,0 +1,2 @@
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/validate_cases.py", "pilot", "--output", "/home/runner/work/_temp/p047-science/pilot.json"]}
+{"instances": 96, "fluid_traces": 1902, "cell_traces": 1902, "measurement": {"cpu_seconds": 0.262049789, "wall_seconds": 0.26405683299999794, "peak_rss_kib": 17784, "workers": 1}}

@@ -5,8 +5,10 @@ from fractions import Fraction
 import argparse
 import json
 import sys
+import os
+import tempfile
 from exact import rational
-from queues import Burst,validate,shadow_fast,shadow_reference,witness
+from queues import Burst,validate,shadow_fast,shadow_reference,witness,simulate
 from allocation import optimize_two,verify_two
 
 
@@ -54,6 +56,11 @@ def main():
     try:
         if args.rows_output is not None and args.action!='check':
             raise ValueError('--rows-output is valid only with check')
+        sources={args.input.resolve()}
+        if args.certificate is not None:sources.add(args.certificate.resolve())
+        targets=[v.resolve() for v in (args.output,args.rows_output) if v is not None]
+        if len(set(targets))!=len(targets) or any(v in sources or v.exists() for v in targets):
+            raise ValueError('outputs must be distinct new paths, never inputs, certificates or retained evidence')
         bs,rates,C,floors=instance(load(args.input))
         if args.action=='check':
             sink=None
@@ -61,8 +68,9 @@ def main():
                 if args.output is not None and args.output.resolve()==args.rows_output.resolve():
                     raise ValueError('--output and --rows-output must differ')
                 args.rows_output.parent.mkdir(parents=True,exist_ok=True)
-                row_temp=args.rows_output.with_name(args.rows_output.name+'.tmp')
-                row_handle=row_temp.open('w',encoding='utf-8')
+                row_handle=tempfile.NamedTemporaryFile(mode='w',encoding='utf-8',
+                    prefix='.rows-',suffix='.tmp',dir=args.rows_output.parent,delete=False)
+                row_temp=Path(row_handle.name)
                 def sink(row):
                     t,q,pending,total=row
                     payload={'time':t,'q':encode(q),'pending':encode(pending),'pool':encode(total)}
@@ -71,10 +79,15 @@ def main():
             ref=shadow_reference(bs,rates,row_sink=sink)
             if out['pool']!=ref['pool'] or out['private']!=ref['private']:
                 raise ArithmeticError('producer/checker mismatch')
+            out['attaining_releases']=witness(bs,out['time'])
+            replay=simulate(bs,rates,out['attaining_releases'])
+            if replay['pool']!=out['pool']:
+                raise ArithmeticError('attaining witness replay mismatch')
             if row_handle is not None:
                 row_handle.close();row_handle=None
-                row_temp.replace(args.rows_output);row_temp=None
-            out['attaining_releases']=witness(bs,out['time'])
+                # Publish diagnostics only after all scientific checks succeed.
+                os.link(row_temp,args.rows_output)
+                row_temp.unlink();row_temp=None
             out['checker']={'row_count':ref['row_count'],
                             'event_times':ref['storage']['event_times'],
                             'sparse_event_entries':ref['storage']['sparse_event_entries'],
@@ -97,7 +110,7 @@ def main():
         text=json.dumps(encode(out),indent=2)+'\n'
         if args.output:
             args.output.parent.mkdir(parents=True,exist_ok=True)
-            args.output.write_text(text,encoding='utf-8')
+            with args.output.open('x',encoding='utf-8') as handle:handle.write(text)
         else:print(text,end='')
     except (ValueError,KeyError,TypeError,OSError,ArithmeticError) as exc:
         if row_handle is not None:row_handle.close()

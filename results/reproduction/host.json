@@ -1,0 +1,16 @@
+{
+  "source": "Local PowerShell Get-CimInstance Win32_Processor and Win32_OperatingSystem; Python sys.version/platform.platform",
+  "cpu": "12th Gen Intel(R) Core(TM) i7-12700KF",
+  "physical_cores": 12,
+  "logical_processors": 20,
+  "os_caption": "Microsoft Windows 11 专业版",
+  "os_version": "10.0.28000",
+  "build": "28000",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.28000-SP0",
+  "guard_mode": "explicit portable; no POSIX CPU/address-space/affinity execution; every campaign child wall timeout 40 seconds",
+  "process_rss": null,
+  "whole_child_cpu": null,
+  "scientific_runtime_dependencies": "Python standard library only; supplied interpreter, not redistributed",
+  "deployment": "No network, NIC, switch, transport or remote host measurement"
+}

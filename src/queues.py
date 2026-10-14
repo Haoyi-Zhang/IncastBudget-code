@@ -31,20 +31,25 @@ def validate(bursts: Sequence[Burst], rates: Sequence[F]) -> None:
 
 def simulate(bursts: Sequence[Burst], rates: Sequence[F], releases: Sequence[int],
              record: bool = False):
-    """Simple exact event-driven oracle for a single admitted arrival trace."""
+    """Exact single-trace replay; sparse arrivals, O(nm) time/O(n+m) space.
+
+    Recording full queue rows adds Theta(n times distinct release epochs)
+    output space. This replay remains separate from window-envelope events.
+    """
     validate(bursts, rates)
     if len(releases) != len(bursts):
         raise ValueError('release length mismatch')
-    events = defaultdict(lambda: [0] * len(rates))
+    events = defaultdict(dict)
     for b,t in zip(bursts,releases):
         if type(t) is not int or not b.lower <= t <= b.upper:
             raise ValueError('release outside declared window')
-        events[t][b.tenant] += b.size
+        events[t][b.tenant] = events[t].get(b.tenant,0) + b.size
     q = [F(0) for _ in rates]
     peaks = [F(0) for _ in rates]
     peak=F(0); when=0; last=0; trace=[]
     for t,arrivals in sorted(events.items()):
-        q = [max(F(0),v-r*(t-last))+a for v,r,a in zip(q,rates,arrivals)]
+        q = [max(F(0),v-r*(t-last))+arrivals.get(i,0)
+             for i,(v,r) in enumerate(zip(q,rates))]
         peaks=[max(a,b) for a,b in zip(peaks,q)]
         if sum(q)>peak: peak=sum(q);when=t
         if record: trace.append((t,tuple(q)))

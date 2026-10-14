@@ -85,7 +85,7 @@ The strongest shared pattern is: motivate a concrete distributed-systems failure
 state a general principle; make the model, objective, and trust boundary explicit;
 provide either a formal argument or an implementable mechanism; connect it to a
 real operational setting; evaluate the evidence actually needed by the claim;
-then delimit what remains. The final paper follows that sequence in eight sections.
+then delimit what remains. The final paper follows that sequence in seven main sections, with related work nested below the Introduction.
 Its figures have distinct roles: one counterexample/intuition diagram, one
 optimization geometry plot, and one exhaustive negative-control plot. Tables
 state model boundaries, a running certificate, and finite validation coverage.
@@ -143,14 +143,33 @@ Claims deliberately removed or rejected:
 - polynomial safety certificates for unrestricted phases;
 - proof that the work will be accepted or is independently novel.
 
-## Venue and policy workflow status
+## Template and disclosure
 
 The supplied `IEEEtran.cls` and `IEEEtran.bst` were inspected and kept unmodified.
 The official TPDS author-information page returned a script shell rather than
 usable static policy content, and the template selector did not resolve during
-this run. Therefore the paper satisfies the user's internal exactly-12-page
-contract, but live submission length, anonymity, supplement, and portal fields
-remain an external-use recheck. IEEE's first-party AI-content guidance was
+this run. The current original-engine PDF naturally occupies 13 pages; no current TPDS length,
+anonymity, supplement or portal requirement is certified by the unavailable static page. IEEE's first-party AI-content guidance was
 accessible; the manuscript accordingly discloses substantive system assistance
-rather than describing it as grammar-only editing. No submission, account action,
-repository URL, authorship approval, or policy exception is asserted.
+rather than describing it as grammar-only editing. No submission, account action, authorship approval or policy exception is asserted.
+
+## Bounded current primary-source reading
+
+The historical calibration set above is retained as a supplied record, not
+re-certified as cover-to-cover reading in the current repair. Current direct
+reading covers Le Boudec--Thiran's variable-capacity/backlog and tightness results
+(Proposition 1.3.6, Theorems 1.4.1 and 1.4.4 and their displayed arguments), and
+Dechter's author-hosted UAI antecedent/longer version, focusing on elimination
+algebra, recorded argmax reconstruction and induced-width cost (longer version
+sections 3.1 and4, Theorems 3.4 and4.2). This supports attribution of standard
+backlog and elimination machinery, not new generic calculus or treewidth claims.
+Bouillard--Thierry's current publisher identity/abstract distinguishes its
+feed-forward blind-multiplexing model; its subscription journal full text was
+not accessed in this repair. The 1999 AI journal full text was not newly read.
+No 22-paper/full-book or independent novelty certification is inferred.
+
+The official IEEE Author Center AI-generated-content policy was read directly:
+https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/ .
+The manuscript's Acknowledgments identifies OpenAI Codex and the substantive code
+and technical-prose assistance actually used for this repair. It does not invent
+a human verification, author approval or grammar-only scope.

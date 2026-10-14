@@ -418,6 +418,34 @@ theorem. No such multi-hop theorem is claimed here.
 
 ## 9. What remains outside these proofs
 
+### Complete certificate-path accounting
+
+The heap bound is a producer-only bound, not the cost of the public checked
+path. With n tenants and m bursts, computing the heap envelope, reconstructing
+the transparent recurrence, building the clipped witness, and independently
+replaying it costs O(nm+(n+m) log(n+m)) arithmetic/comparison operations. Parsing
+and serializing the compact thresholds and witness add O(n+m) fields; rational
+operand lengths remain additional bit costs. The O(nm) term is not removed by
+calling the producer near-linear.
+
+For replay, group actual releases by time in maps containing only nonzero
+tenant arrivals. There are at most m such entries and m times. One queue vector
+and one private-peak vector require O(n) entries; sorting the time index costs
+O(m) entries. At each epoch i's state is replaced by
+max(0,q_i-r_i*(t-last))+arrivals.get(i,0), exactly the dense recurrence with
+implicit zero arrivals. Induction over the ordered epochs proves that sparse
+storage preserves every queue, private peak, pooled peak, maximizing time and
+optional recorded row. Thus unrecorded replay uses O(n+m) working entries,
+whereas recording all n-dimensional rows adds O(nm) output entries. This is an
+entry bound, not a bound on Python object bytes or physical switch memory.
+
+The existing six sparse controls have one fixed unit arrival per tenant at
+distinct times. The old dense arrival vectors allocated n^2 slots; the sparse
+maps have n nonzero entries. A smaller entry count need not mean fewer bytes at
+every n: Python dictionary overhead is measured separately and can dominate at
+small sizes. No release uncertainty, timing language, or queue theorem is
+changed by this storage refinement.
+
 No proof here establishes a workload's release windows from real executions,
 inter-switch independence, transport throughput/collapse, fairness of collective
 completion times, or optimal buffer use by arbitrary work-conserving schedulers.

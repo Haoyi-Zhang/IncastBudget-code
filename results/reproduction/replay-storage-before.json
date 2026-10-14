@@ -1,0 +1,74 @@
+{
+  "source_module": "D:\\CodexProjects\\wg-check\\substantive-library\\P047\\artifact\\src\\queues.py",
+  "optimization": 0,
+  "input_origin": "existing results/controls.json storage_scaling.rows; same fixed-time authored construction",
+  "measurement_scope": "one replay per existing size; inputs constructed before tracing; Python traced allocations, not process RSS or physical buffer memory",
+  "rows": [
+    {
+      "n": 8,
+      "m": 8,
+      "arrival_entries": 64,
+      "expected_nonzero_entries": 8,
+      "pool": "1",
+      "private_sum": "8",
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.0012741000100504607,
+      "peak_traced_python_bytes": 2944
+    },
+    {
+      "n": 16,
+      "m": 16,
+      "arrival_entries": 256,
+      "expected_nonzero_entries": 16,
+      "pool": "1",
+      "private_sum": "16",
+      "cpu_seconds": 0.0,
+      "wall_seconds": 0.004371099988929927,
+      "peak_traced_python_bytes": 6168
+    },
+    {
+      "n": 32,
+      "m": 32,
+      "arrival_entries": 1024,
+      "expected_nonzero_entries": 32,
+      "pool": "1",
+      "private_sum": "32",
+      "cpu_seconds": 0.015625,
+      "wall_seconds": 0.01722670000162907,
+      "peak_traced_python_bytes": 15688
+    },
+    {
+      "n": 64,
+      "m": 64,
+      "arrival_entries": 4096,
+      "expected_nonzero_entries": 64,
+      "pool": "1",
+      "private_sum": "64",
+      "cpu_seconds": 0.0625,
+      "wall_seconds": 0.06809159999829717,
+      "peak_traced_python_bytes": 50520
+    },
+    {
+      "n": 128,
+      "m": 128,
+      "arrival_entries": 16384,
+      "expected_nonzero_entries": 128,
+      "pool": "1",
+      "private_sum": "128",
+      "cpu_seconds": 0.265625,
+      "wall_seconds": 0.29016579999006353,
+      "peak_traced_python_bytes": 166096
+    },
+    {
+      "n": 256,
+      "m": 256,
+      "arrival_entries": 65536,
+      "expected_nonzero_entries": 256,
+      "pool": "1",
+      "private_sum": "256",
+      "cpu_seconds": 1.125,
+      "wall_seconds": 1.1409935999836307,
+      "peak_traced_python_bytes": 593912
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+pilot.json matches
+allocation-pilot.json matches
+allocation-bounded.json matches
+controls.json matches
+correlation.json matches
+bounded-00.json matches
+bounded-01.json matches
+bounded-02.json matches
+bounded-03.json matches
+bounded-04.json matches
+bounded-05.json matches
+bounded-06.json matches
+bounded-07.json matches
+bounded-08.json matches
+bounded-09.json matches
+bounded-10.json matches
+bounded-11.json matches
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/tests/run.py", "--output", "/home/runner/work/_temp/p047-science/test-summary.json"]}
+=== core model suite: 19 discovered methods ===
+test_boundary_rates (test_models.QueueTests.test_boundary_rates) ... ok
+test_certificate_mutations (test_models.QueueTests.test_certificate_mutations) ... ok
+test_empty (test_models.QueueTests.test_empty) ... ok
+test_enumeration_guard (test_models.QueueTests.test_enumeration_guard) ... ok
+test_exact_numerics (test_models.QueueTests.test_exact_numerics) ... ok
+test_graph_construction (test_models.QueueTests.test_graph_construction) ... ok
+test_heap_staleness (test_models.QueueTests.test_heap_staleness) ... ok
+test_invalid_bursts (test_models.QueueTests.test_invalid_bursts) ... ok
+test_invalid_calendar_and_release (test_models.QueueTests.test_invalid_calendar_and_release) ... ok
+test_json_input_rejection (test_models.QueueTests.test_json_input_rejection) ... ok
+test_large_calendar_horizon (test_models.QueueTests.test_large_calendar_horizon) ... ok
+test_permutation_invariance (test_models.QueueTests.test_permutation_invariance) ... ok
+test_phase_dp_generic_and_rejection (test_models.QueueTests.test_phase_dp_generic_and_rejection) ... ok
+test_phase_input_rejection (test_models.QueueTests.test_phase_input_rejection) ... ok
+test_phase_rational_replay (test_models.QueueTests.test_phase_rational_replay) ... ok
+test_phase_treewidth_elimination (test_models.QueueTests.test_phase_treewidth_elimination) ... ok
+test_private_caps (test_models.QueueTests.test_private_caps) ... ok
+test_witness_vector (test_models.QueueTests.test_witness_vector) ... ok
+test_zero_service_ties (test_models.QueueTests.test_zero_service_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.370s
+
+OK
+=== additional exactness/adversarial suite: 15 discovered methods ===
+test_degenerate_duplicate_pieces (test_independent_oracles.ExactAffineMinimaxTests.test_degenerate_duplicate_pieces) ... ok
+test_infeasible_capacity_rejected (test_independent_oracles.ExactAffineMinimaxTests.test_infeasible_capacity_rejected) ... ok
+test_mutated_certificates_rejected (test_independent_oracles.ExactAffineMinimaxTests.test_mutated_certificates_rejected) ... ok
+test_random_exact_kkt_and_dense_grid_lower_bound (test_independent_oracles.ExactAffineMinimaxTests.test_random_exact_kkt_and_dense_grid_lower_bound) ... ok
+test_three_tenant_fractional_certificate (test_independent_oracles.ExactAffineMinimaxTests.test_three_tenant_fractional_certificate) ... ok
+test_bad_witness_rejected (test_independent_oracles.FiniteDomainVETests.test_bad_witness_rejected) ... ok
+test_binary_and_ternary_domains_against_bruteforce (test_independent_oracles.FiniteDomainVETests.test_binary_and_ternary_domains_against_bruteforce) ... ok
+test_maxcut_special_case (test_independent_oracles.FiniteDomainVETests.test_maxcut_special_case) ... ok
+test_boundary_only_optimum (test_independent_oracles_adversarial.AdversarialExactnessTests.test_boundary_only_optimum) ... ok
+test_disconnected_and_isolated_phase_variables (test_independent_oracles_adversarial.AdversarialExactnessTests.test_disconnected_and_isolated_phase_variables) ... ok
+test_incomplete_factor_table_rejected (test_independent_oracles_adversarial.AdversarialExactnessTests.test_incomplete_factor_table_rejected) ... ok
+test_large_denominators_remain_exact (test_independent_oracles_adversarial.AdversarialExactnessTests.test_large_denominators_remain_exact) ... ok
+test_negative_factor_scores (test_independent_oracles_adversarial.AdversarialExactnessTests.test_negative_factor_scores) ... ok
+test_order_validation (test_independent_oracles_adversarial.AdversarialExactnessTests.test_order_validation) ... ok
+test_wrong_bound_multiplier_rejected (test_independent_oracles_adversarial.AdversarialExactnessTests.test_wrong_bound_multiplier_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 8.121s
+
+OK
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/queue_certificate.py", "check", "/home/runner/work/IncastBudget/IncastBudget/inputs/example.json", "--output", "/home/runner/work/_temp/p047-science/example-check.json"]}
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/queue_certificate.py", "optimize", "/home/runner/work/IncastBudget/IncastBudget/inputs/example.json", "--output", "/home/runner/work/_temp/p047-science/example-certificate.json"]}
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/queue_certificate.py", "verify", "/home/runner/work/IncastBudget/IncastBudget/inputs/example.json", "/home/runner/work/_temp/p047-science/example-certificate.json", "--output", "/home/runner/work/_temp/p047-science/example-verification.json"]}
+All finite checks completed. This is not a general proof or novelty review.

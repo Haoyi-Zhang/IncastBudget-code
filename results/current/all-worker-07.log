@@ -1,0 +1,2 @@
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/validate_cases.py", "bounded", "--output", "/home/runner/work/_temp/p047-science/bounded-01.json", "--chunk", "1"]}
+{"instances": 1728, "fluid_traces": 8000, "cell_traces": 24000, "calendars": [[0, 1], [0, 0, 1], [-1, 1, 0, 1]], "measurement": {"cpu_seconds": 1.711741475, "wall_seconds": 1.7132845169999982, "peak_rss_kib": 22424, "workers": 1}}

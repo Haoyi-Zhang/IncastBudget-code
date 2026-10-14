@@ -1,0 +1,127 @@
+{
+  "scope": "One serial paired pass over existing authored inputs; not independent workload samples or deployed network measurements.",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+    "os": "Windows-11-10.0.28000-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "logical_cpus": 20,
+    "optimization": 1
+  },
+  "read_scope": "input file bytes loaded once outside timers; each timed path includes JSON decoding, object conversion, computation, witness replay/checking and output serialization; excludes interpreter startup/disk I/O",
+  "sources": {
+    "pilot.json": {
+      "sha256": "9e0ef1c2bc3edb23831a18a8461a817c31c8bdc133a3b61f608115d7bb0bfcec",
+      "bytes": 44259
+    },
+    "bounded.jsonl": {
+      "sha256": "866f7ed8f6df996d85e9d77e65a327c3a4072156b9f6f77dfbc6eb9cd0874da0",
+      "bytes": 3541658
+    },
+    "allocation-pilot.json": {
+      "sha256": "a5e198a49c15731d5adce192930e259456cd28a85d70876abfa0ee989e2e298a",
+      "bytes": 38642
+    },
+    "allocation-bounded.json": {
+      "sha256": "73147a4499b87621a8cbc1ca5f71c603be98cb2000109813b8f0890af0a5378a",
+      "bytes": 131797
+    }
+  },
+  "groups": [
+    {
+      "input": "pilot.json",
+      "instances": 96,
+      "order": [
+        "production",
+        "direct"
+      ],
+      "production": {
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.01412119998713024
+      },
+      "direct": {
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007378899987088516
+      },
+      "production_over_direct_wall": 1.9137269798803744,
+      "all_outputs_equal": true,
+      "serialized_output_bytes": 7126,
+      "output_sha256": "fb29055bcfeb38dd0eb952938f1dad43d0c39c9dfb52dd86c0be03ac4e284f06",
+      "supplied_candidate_verifier": null,
+      "certificate_preparation_scope": null
+    },
+    {
+      "input": "bounded.jsonl",
+      "instances": 20736,
+      "order": [
+        "direct",
+        "production"
+      ],
+      "production": {
+        "cpu_seconds": 2.171875,
+        "wall_seconds": 2.2299373999994714
+      },
+      "direct": {
+        "cpu_seconds": 1.21875,
+        "wall_seconds": 1.2361725000082515
+      },
+      "production_over_direct_wall": 1.8039047139331983,
+      "all_outputs_equal": true,
+      "serialized_output_bytes": 1459006,
+      "output_sha256": "b0670e2923eac27b1cdc8b1f97f78e6d8cc371e8368953862a6b35c83f0361a3",
+      "supplied_candidate_verifier": null,
+      "certificate_preparation_scope": null
+    },
+    {
+      "input": "allocation-pilot.json",
+      "instances": 80,
+      "order": [
+        "production",
+        "direct"
+      ],
+      "production": {
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.023644300003070384
+      },
+      "direct": {
+        "cpu_seconds": 0.109375,
+        "wall_seconds": 0.09676549999858253
+      },
+      "production_over_direct_wall": 0.244346383818786,
+      "all_outputs_equal": true,
+      "serialized_output_bytes": 4590,
+      "output_sha256": "9457d8620b96a124d23a63f9386c1189b71bb0b6e929be11a1a6f52f5383e887",
+      "supplied_candidate_verifier": {
+        "cpu_seconds": 0.0,
+        "wall_seconds": 0.007172099984018132
+      },
+      "certificate_preparation_scope": "candidate preparation excluded ONLY from separate weaker verification task; identifiers get no candidate"
+    },
+    {
+      "input": "allocation-bounded.json",
+      "instances": 432,
+      "order": [
+        "direct",
+        "production"
+      ],
+      "production": {
+        "cpu_seconds": 0.109375,
+        "wall_seconds": 0.0966813999984879
+      },
+      "direct": {
+        "cpu_seconds": 0.046875,
+        "wall_seconds": 0.056849899992812425
+      },
+      "production_over_direct_wall": 1.7006432730877523,
+      "all_outputs_equal": true,
+      "serialized_output_bytes": 22316,
+      "output_sha256": "7e5c7a4f1e233a2850ccede807239708c2df4bf6d20746eb935e780e18a1c898",
+      "supplied_candidate_verifier": {
+        "cpu_seconds": 0.015625,
+        "wall_seconds": 0.028759100008755922
+      },
+      "certificate_preparation_scope": "candidate preparation excluded ONLY from separate weaker verification task; identifiers get no candidate"
+    }
+  ]
+}

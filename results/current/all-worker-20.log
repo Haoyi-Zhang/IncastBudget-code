@@ -1,0 +1,1 @@
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/queue_certificate.py", "optimize", "/home/runner/work/IncastBudget/IncastBudget/inputs/example.json", "--output", "/home/runner/work/_temp/p047-science/example-certificate.json"]}

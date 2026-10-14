@@ -1,0 +1,2 @@
+{"command": ["/opt/hostedtoolcache/Python/3.12.14/x64/bin/python", "/home/runner/work/IncastBudget/IncastBudget/src/validate_cases.py", "allocation-bounded", "--output", "/home/runner/work/_temp/p047-science/allocation-bounded.json"]}
+{"instances": 432, "traces": 1200, "private_cap_checks": 3888, "measurement": {"cpu_seconds": 0.8110366099999999, "wall_seconds": 0.8134573620000012, "peak_rss_kib": 18708, "workers": 1}}
