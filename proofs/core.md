@@ -420,13 +420,16 @@ theorem. No such multi-hop theorem is claimed here.
 
 ### Complete certificate-path accounting
 
-The heap bound is a producer-only bound, not the cost of the public checked
-path. With n tenants and m bursts, computing the heap envelope, reconstructing
+The transparent checked route has a different bound from the heap producer.
+With n tenants and m bursts, computing the heap envelope, reconstructing
 the transparent recurrence, building the clipped witness, and independently
 replaying it costs O(nm+(n+m) log(n+m)) arithmetic/comparison operations. Parsing
 and serializing the compact thresholds and witness add O(n+m) fields; rational
 operand lengths remain additional bit costs. The O(nm) term is not removed by
-calling the producer near-linear.
+calling the producer near-linear. The separate constant-rate route constructs
+per-tenant segments, verifies their merged envelope and replays the clipped
+arrivals in O((n+m) log(n+m)) arithmetic/comparison operations. Its invariants
+and complete-path bound are in `segment-verifier.md`; it emits no dense rows.
 
 For replay, group actual releases by time in maps containing only nonzero
 tenant arrivals. There are at most m such entries and m times. One queue vector
