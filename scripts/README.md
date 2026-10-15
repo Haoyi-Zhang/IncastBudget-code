@@ -4,10 +4,10 @@ Figure generation is optional post-processing of retained results, not an experi
 
 ```sh
 python -m pip install matplotlib fonttools
-python scripts/plot_figures.py
+python scripts/plot_figures.py --output /tmp/incast-plots
 ```
 
-The native outputs are in `artifact/figures/`. To copy identical PDFs into a full project's sibling paper, add `--paper-figures ../paper/figures`. A paper-only package can compile its shipped figure PDFs without Python.
+Run from the repository root. The command writes `allocation.pdf` and `corners.pdf` to `/tmp/incast-plots`; choose a fresh external directory to preserve retained figures. Without `--output`, the default is `figures/` relative to the repository root, not `artifact/figures/` in a standalone checkout. To copy identical PDFs into a full project's sibling paper, add `--paper-figures ../paper/figures`. A paper-only package can compile its shipped figure PDFs without Python.
 
 The producer reads `results/derived/allocation.csv` and `corners.csv`. `export_results.py` remains the owner of these exact decimal CSVs; `--data` can select a newly exported directory. It checks the three active running-instance cuts and the endpoint-corner control without rerunning the validation campaign.
 

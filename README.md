@@ -97,6 +97,13 @@ separate segment regression methods compare the complete existing 96+20,736
 window inputs in ordinary and optimized modes and do not change the frozen
 34-method model suite.
 
+Run the separate segment regressions from the repository root:
+
+```sh
+python -B -m unittest discover -s tests -p test_segment_check.py -v
+python -B -O -m unittest discover -s tests -p test_segment_check.py -v
+```
+
 Burst tenant, lower endpoint, upper endpoint, and size fields are integers.
 Rates, floors, and capacities accept integers or exact strings such as `1/2`.
 Binary floating point, booleans, duplicate JSON keys, and non-finite constants
@@ -202,8 +209,10 @@ bundled or modified.
 Original code, synthetic data, and proof documentation are covered by `LICENSE`; consulted-resource boundaries are in `licenses/NOTICE.md`.
 ## Vector figure reproduction
 
-The retained data can be rendered with `python scripts/plot_figures.py`.
-Native PDFs go to `figures/`; `--paper-figures ../paper/figures` copies identical
+The retained data can be rendered with
+`python scripts/plot_figures.py --output /tmp/incast-plots`.
+Choose a fresh output directory to preserve retained figures. The default without
+`--output` is `figures/`; `--paper-figures ../paper/figures` copies identical
 assets into a full project's sibling paper. Figure-only dependencies, font
 discovery and portable fallbacks are documented in `scripts/README.md`.
 Historical raw files and scientific thresholds are unchanged. CLI outputs must
