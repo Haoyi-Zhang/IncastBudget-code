@@ -143,15 +143,14 @@ Claims deliberately removed or rejected:
 - polynomial safety certificates for unrestricted phases;
 - proof that the work will be accepted or is independently novel.
 
-## Template and disclosure
+## Template
 
 The supplied `IEEEtran.cls` and `IEEEtran.bst` were inspected and kept unmodified.
 The official TPDS author-information page returned a script shell rather than
 usable static policy content, and the template selector did not resolve during
 this run. The current original-engine PDF naturally occupies 13 pages; no current TPDS length,
-anonymity, supplement or portal requirement is certified by the unavailable static page. IEEE's first-party AI-content guidance was
-accessible; the manuscript accordingly discloses substantive system assistance
-rather than describing it as grammar-only editing. No submission, account action, authorship approval or policy exception is asserted.
+anonymity, supplement or portal requirement is certified by the unavailable static page.
+No submission, account action, authorship approval or policy exception is asserted.
 
 ## Bounded current primary-source reading
 
@@ -167,9 +166,3 @@ Bouillard--Thierry's current publisher identity/abstract distinguishes its
 feed-forward blind-multiplexing model; its subscription journal full text was
 not accessed in this repair. The 1999 AI journal full text was not newly read.
 No 22-paper/full-book or independent novelty certification is inferred.
-
-The official IEEE Author Center AI-generated-content policy was read directly:
-https://journals.ieeeauthorcenter.ieee.org/become-an-ieee-journal-author/publishing-ethics/guidelines-and-policies/submission-and-peer-review-policies/ .
-The manuscript's Acknowledgments identifies OpenAI Codex and the substantive code
-and technical-prose assistance actually used for this repair. It does not invent
-a human verification, author approval or grammar-only scope.
